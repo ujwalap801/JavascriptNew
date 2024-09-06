@@ -1,0 +1,1 @@
+S is dynamically typed language means the data types of varabiles can be changed
