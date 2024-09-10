@@ -1,0 +1,1 @@
+when we we accress the element which is not mentioned in array it gives undefined, not arrow
