@@ -34,3 +34,22 @@ console.log(result4);
 marks.forEach((e,index)=>{
     console.log(e,index);
 })
+
+
+//find element
+let element = marks.find(el=>el === 10)
+console.log(element); //returns undefined if element is not found
+
+//find index of an element
+let index = marks.findIndex(el=>el === 10)
+console.log(index);   //return -1 if index is not found
+
+
+//reduce(reduce array to a single value)
+// find sum of marks
+let sum = marks.reduce((accumulator,element)=>accumulator+element) //accumaulator stores the result of previous operation
+console.log(sum);
+
+// get small element
+let smallest = marks.reduce((accumulator,element)=>accumulator<element?accumulator:element);
+console.log(smallest);

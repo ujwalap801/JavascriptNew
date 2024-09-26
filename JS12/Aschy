@@ -1,0 +1,36 @@
+ JavaScript, synchronous and asynchronous execution refer to different ways of processing code.
+
+Synchronous:
+In synchronous code, operations are performed one after another. The execution of the next operation waits for the previous one to complete.
+This approach is blocking, meaning each operation blocks the next one until it finishes.
+Example:
+
+javascript
+console.log("First");
+console.log("Second");
+console.log("Third");
+
+Output:
+First
+Second
+Third
+Each console.log statement is executed in order.
+
+Asynchronous:
+In asynchronous code, operations can be executed independently. They don't block the execution of the following operations and allow the program to continue while waiting for tasks like network requests or timers to complete.
+Asynchronous operations in JavaScript use callbacks, promises, or async/await to handle such tasks.
+
+Example using Callbacks:
+javascript
+console.log("First");
+
+setTimeout(() => {
+  console.log("Second");
+}, 1000); // Executes after 1 second
+
+console.log("Third");
+
+Output:
+First
+Third
+Second

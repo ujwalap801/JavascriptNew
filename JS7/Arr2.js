@@ -32,3 +32,8 @@ let users3 = users.map(userObj=>{
 })
 
 console.log(users3);
+
+
+//find user with lowest salary
+let user4 = users.reduce((acc,userObj)=>userObj.salary <acc.salary?userObj:acc);
+console.log(user4);
