@@ -1,0 +1,44 @@
+=>Everythings in js happens inside a execution context
+
+=>Callstack maintains the order of execution of execution contexts
+
+=>Javascript is a single threaded language. This means it has one call stack and one memory heap. As expected, it executes code in order and must finish executing a piece code before moving onto the next.
+
+1. Execution Context:
+In JavaScript, everything happens inside an execution context. It is the environment in which JavaScript code is executed. There are two types:
+
+Global Execution Context: Created when your program starts running. It manages global variables and functions.
+Function Execution Context: Created every time a function is invoked, managing local variables and function-specific tasks.
+Each execution context has two phases:
+
+Creation phase: Involves setting up the scope, creating memory space for variables (also called hoisting).
+Execution phase: Involves running the code line by line.
+
+
+2. Call Stack:
+JavaScript uses a call stack to keep track of all the execution contexts in the order they are executed. Each time a function is invoked, a new execution context is created and pushed onto the stack. When a function finishes executing, the context is popped from the stack.
+
+function first() {
+  second();
+  console.log('First Function');
+}
+function second() {
+  console.log('Second Function');
+}
+first();
+
+
+
+The call stack order would be:
+
+first() is pushed onto the stack.
+Inside first(), second() is invoked, so it’s pushed onto the stack.
+second() finishes, so it is popped from the stack.
+first() finishes, so it’s popped from the stack.
+3. Single-Threaded Language:
+JavaScript is single-threaded, meaning it can execute only one command at a time in a single call stack. Even with asynchronous tasks, JavaScript relies on an event loop and a callback queue but still executes them one by one.
+
+4. Memory Heap:
+JavaScript also has a memory heap, where objects, functions, and variables are stored. It manages dynamic memory allocation during runtime.
+
+In summary, JavaScript’s single-threaded nature, call stack, and memory heap define how the engine handles code execution and memory management efficiently.
