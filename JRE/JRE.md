@@ -24,7 +24,7 @@
 ## 4)JIT Compilation:
 
 ### Starts by interpreting code.
-### Identifies "hot" (frequently executed) code and compiles it to machine code on-the-fly.
+### Identifies "hot" (frequently executed) code and compiles. In JIT compilation, when the engine finds frequently used code, it quickly converts that code into faster machine code while the program keeps running. This improves performance without needing to pause or restart the program.
 ### Optimizes performance based on runtime data, making code run faster.
 
 ## Advantages of JIT:
