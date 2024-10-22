@@ -1,5 +1,7 @@
 # In JavaScript, let and var are used for variable declarations, but they behave differently in terms of scope and hoisting. Here's an explanation of each:
 
+### scope means where we can access specific variables and functions in a code
+
 ## 1. var
 # Scope:
 var is function-scoped, meaning it is limited to the function in which it is declared. If declared outside any function, it becomes globally scoped.
