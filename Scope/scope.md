@@ -49,7 +49,7 @@
 
 
 ### Example
-### console.log(b); // ReferenceError: b is in the temporal dead zone
+### console.log(b); // ReferenceError: b is in the temporal dead zone (Can't access b before initailizarion)
 ### let b = 10;
 
 
