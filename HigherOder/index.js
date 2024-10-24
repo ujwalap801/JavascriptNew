@@ -44,3 +44,24 @@ const calculate = function(radius,logic)
 console.log(calculate(radius,area));
 console.log(calculate(radius,circumference));
 console.log(calculate(radius,Diameter));
+
+
+// 1: Function that Returns a Function
+
+// A higher-order function that returns another function
+function createMultiplier(multiplier) {
+    return function (x) {
+        return x * multiplier;
+    };
+}
+
+
+// Create a function that doubles the input
+const double = createMultiplier(2);
+
+// Create a function that triples the input
+const triple = createMultiplier(3);
+
+// Using the functions
+console.log(double(5)); // Outputs: 10
+console.log(triple(5)); // Outputs: 15

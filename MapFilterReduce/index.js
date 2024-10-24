@@ -21,6 +21,14 @@ const output1 = arr.map(binary);
 console.log(output1);
 
 
+// using arrow function 
+const o = arr.map((x)=>
+{
+    return x.toString(2);
+})
+
+console.log(o);
+
 
 //Filter
 const arr1 =[5,1,3,4,6];
