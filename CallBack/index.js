@@ -17,7 +17,11 @@ x(function y()
     console.log("y")
 })
 
+// output :x 
+        // y
+        // timer
 
+// closure 
 function attachEventListener()
 {
 let count =0;

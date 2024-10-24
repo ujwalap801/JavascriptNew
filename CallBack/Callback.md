@@ -1,27 +1,34 @@
-## A callback function is a function passed as an argument to another function. This function is invoked or called after some operation has been completed. Callbacks are often used to handle asynchronous operations, such as API requests, timers, or event handling in programming.
+### A callback function is a function passed as an argument to another function. This function is invoked or called after some operation has been completed. Callbacks are often used to handle asynchronous operations, such as API requests, timers, or event handling in programming.
 
-Here’s a simple example of a callback function in JavaScript:
 
-# Example:
+## 1. Function that is passed on as argument to another function is called callback function.
+## 2. setTimeout helps turn JS which is sinhlethreaded and synchronous into asynchronous.
+## 3. Event listeners can also invoke closures with scope.
+## 4. Event listeners consume a lot of memory which can potentially slow down the website therefore it is good practice to remove if it is not used.
 
-// A function that takes another function as a parameter
-function processUserInput(callback) {
-  const name = "Ujwala";
-  // Now call the callback function
-  callback(name);
-}
 
-// A function to be passed as the callback
-function greet(name) {
-  console.log(`Hello, ${name}!`);
-}
+### Here’s a simple example of a callback function in JavaScript:
 
-// Using the callback
-processUserInput(greet);
+## Example:
+### A function that takes another function as a parameter
+
+### function processUserInput(callback) {
+### const name = "Ujwala";
+  ### // Now call the callback function
+  ### callback(name);
+### }
+
+### // A function to be passed as the callback
+### function greet(name) {
+  ### console.log(`Hello, ${name}!`);
+### }
+
+### // Using the callback
+### processUserInput(greet);
 
 # Explanation:
-processUserInput is the main function, which takes callback as an argument.
-The callback (in this case, greet) is executed inside processUserInput with the argument name.
+### processUserInput is the main function, which takes callback as an argument.
+### The callback (in this case, greet) is executed inside processUserInput with the argument name.
 
 
 
