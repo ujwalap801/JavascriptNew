@@ -22,9 +22,6 @@ End
 Executed after 2 seconds
 
 
-
-
-
 # console.log("s");
 
 setTimeout(function cd()

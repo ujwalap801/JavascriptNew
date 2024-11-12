@@ -5,7 +5,6 @@ let person={
     age:21
 }
 
-
 // JSON
 let personJson={
     "pid":100,

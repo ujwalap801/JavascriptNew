@@ -38,9 +38,6 @@ btn1.addEventListener('click',()=>
 
 })
 
-
-
-
     // remove elements from DOM
 
     btn2.addEventListener("click",()=>
