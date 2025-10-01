@@ -6,7 +6,8 @@
 ### A program that executes JavaScript by converting it into machine code.
 ### Early engines interpreted code line-by-line (interpreted language).
 ### Modern engines use JIT (Just-In-Time) compilation, where code is compiled to machine code during runtime for better performance.
-
+### V8 engine is used in google broswer, nodejs
+### first engine is spidermonkey in firebox
 
 ## 2)JavaScript Runtime Environment:
 
